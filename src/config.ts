@@ -1,16 +1,16 @@
 let global : any = typeof window !== 'undefined' ? window : self;
 global.config = {
-	apiUrl:typeof window !== 'undefined' && window.location ? window.location.href.substr(0,window.location.href.lastIndexOf('/')+1)+'api/' : 'https://wallet.getmasari.org/api/',
+	apiUrl:typeof window !== 'undefined' && window.location ? window.location.href.substr(0,window.location.href.lastIndexOf('/')+1)+'api/' : 'https://rollin.candy.surf/api/',
 	trustedDaemonsAddresses:[
-		'https://wallet.getmasari.org:38084/'
+		'https://wow.candy.surf:34568/'
 	],
 	phpRelay:typeof window !== 'undefined' ? true : false,
-	mainnetExplorerUrl: "https://explorer.getmasari.org/",
-	mainnetExplorerUrlHash: "https://explorer.getmasari.org/transaction.html?hash={ID}",
-	mainnetExplorerUrlBlock: "https://explorer.getmasari.org/block.html?height={ID}",
-	testnetExplorerUrl: "http://testnet.msrchain.net/",
-	testnetExplorerUrlHash: "http://testnet.msrchain.net/tx/{ID}",
-	testnetExplorerUrlBlock: "http://testnet.msrchain.net/block/{ID}",
+	mainnetExplorerUrl: "https://explore.wownero.com/",
+	mainnetExplorerUrlHash: "https://explore.wownero.com/transaction.html?hash={ID}",
+	mainnetExplorerUrlBlock: "https://explore.wownero.com/block.html?height={ID}",
+	testnetExplorerUrl: "http://testnet.wownero.net/",
+	testnetExplorerUrlHash: "http://testnet.wownero.net/tx/{ID}",
+	testnetExplorerUrlBlock: "http://testnet.wownero.net/block/{ID}",
 	testnet: false,
 	coinUnitPlaces: 12,
 	txMinConfirms: 10,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Monero
@@ -28,10 +28,10 @@ global.config = {
 	idleTimeout: 30,
 	idleWarningDuration: 20,
 
-	coinSymbol: 'MSR',
-	openAliasPrefix: "msr",
-	coinName: 'Masari',
-	coinUriPrefix: 'masari:',
+	coinSymbol: 'WOW',
+	openAliasPrefix: "wow",
+	coinName: 'Wownero',
+	coinUriPrefix: 'wownero:',
 	avgBlockTime: 60,
 	maxBlockNumber: 500000000,
 
