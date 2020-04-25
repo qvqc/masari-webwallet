@@ -12,18 +12,18 @@ global.config = {
 	testnetExplorerUrlHash: "http://testnet.wownero.net/tx/{ID}",
 	testnetExplorerUrlBlock: "http://testnet.wownero.net/block/{ID}",
 	testnet: false,
-	coinUnitPlaces: 12,
-	txMinConfirms: 10,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Monero
+	coinUnitPlaces: 11,
+	txMinConfirms: 4,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Monero
 	txCoinbaseMinConfirms: 60, // corresponds to CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW in Monero
-	addressPrefix: 28,
-	integratedAddressPrefix: 29,
-	addressPrefixTestnet: 33,
-	integratedAddressPrefixTestnet: 34,
-	subAddressPrefix: 52,
-	subAddressPrefixTestnet: 73,
-	feePerKB: new JSBigInt('400000000'),//20^10 - for testnet its not used, as fee is dynamic.
-	dustThreshold: new JSBigInt('1000000000'),//10^10 used for choosing outputs/change - we decompose all the way down if the receiver wants now regardless of threshold
-	defaultMixin: 12, // default value mixin
+	addressPrefix: 4146,
+	integratedAddressPrefix: 6810,
+	addressPrefixTestnet: 53,
+	integratedAddressPrefixTestnet: 54,
+	subAddressPrefix: 12208,
+	subAddressPrefixTestnet: 63,
+	feePerKB: new JSBigInt('1000000000'), //20^10 - for testnet its not used, as fee is dynamic.
+	dustThreshold: new JSBigInt('1000000000'), //10^10 used for choosing outputs/change - we decompose all the way down if the receiver wants now regardless of threshold
+	defaultMixin: 21, // default value mixin
 
 	idleTimeout: 30,
 	idleWarningDuration: 20,
